@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02</title>
+	<style>
+		.row {
+			background: #b1b1e6;
+		}
+		table{
+			height: 300px;
+			border-collapse: collapse;
+		}
+		table, tr, td {
+    	border: 1px solid #CDC9C9;
+		}
+		table .bt {
+			border-style: none;
+		}
+		table .row td {
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr class="row" onmouseover="changeColorGreen(this);" onmouseout="changeColorDefault(this);">
+			<td>
+				<input type="checkbox" name="" class="item">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis.
+			</td>
+		</tr>
+		<tr class="row" onmouseover="changeColorGreen(this);" onmouseout="changeColorDefault(this);">
+			<td>
+				<input type="checkbox" name="" class="item">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis.
+			</td>
+		</tr>
+		<tr class="row" onmouseover="changeColorGreen(this);" onmouseout="changeColorDefault(this);">
+			<td>
+				<input type="checkbox" name="" class="item">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis.
+			</td>
+		</tr>
+		<tr class="row" onmouseover="changeColorGreen(this);" onmouseout="changeColorDefault(this);">
+			<td>
+				<input type="checkbox" name="" class="item">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis.
+			</td>
+		</tr>
+		<tr class="row" onmouseover="changeColorGreen(this);" onmouseout="changeColorDefault(this);">
+			<td>
+				<input type="checkbox" name="" class="item">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis.
+			</td>
+		</tr>
+		<tr class="row" onmouseover="changeColorGreen(this);" onmouseout="changeColorDefault(this);">
+			<td>
+				<input type="checkbox" name="" class="item">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis.
+			</td>
+		</tr>
+		<tr class="row" onmouseover="changeColorGreen(this);" onmouseout="changeColorDefault(this);">
+			<td>
+				<input type="checkbox" name="" class="item">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis.
+			</td>
+		</tr>
+		<tr class="row" onmouseover="changeColorGreen(this);" onmouseout="changeColorDefault(this);">
+			<td>
+				<input type="checkbox" name="" class="item">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, veritatis.
+			</td>
+		</tr>
+		
+	</table>
+	<tr class="bt">
+			<td>
+				<button id="checkAll">CheckAll</button>
+			</td>
+			<td>
+				<button id="unCheckAll">UnCheckAll</button>
+			</td>
+		</tr>
+
+
+	<script>
+		function changeColorGreen(a) {
+			a.style.background = '#FFFF99';
+		}
+
+		function changeColorDefault(a) {
+			a.style.background = '#b1b1e6';
+		}	
+		document.getElementById('checkAll').addEventListener('click',function(){
+			var listItem = document.getElementsByClassName('item');
+			for(var i = 0; i < listItem.length ; i++) {
+				listItem[i].checked = true;
+			}
+		});
+
+		document.getElementById('unCheckAll').addEventListener('click',function(){
+			var listItem = document.getElementsByClassName('item');
+			for(var i = 0; i < listItem.length ; i++) {
+				listItem[i].checked = false;
+			}
+		});
+
+	</script>
+</body>
+</html>

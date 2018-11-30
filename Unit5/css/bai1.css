@@ -1,0 +1,408 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#zent{
+	width: 100%;
+
+}
+#menu{
+	width: 100%;
+	margin-top: 0 auto;
+}
+.menu-top{
+	width: 100%;
+    height: 50px;
+    background-color: red;
+}
+.menu-top-con{
+	width: 70%;
+    height: 0 auto;
+    height: auto;
+    font-size: 30px;
+    list-style: none;
+    padding: 1% 0% 0% 15%;
+}
+.menu-top-con a{
+	text-decoration: none;
+	color: #fff;
+}
+.menu-center .menu-center-con li:hover {
+	background-color: #FFCCCC;
+}
+.item{
+	display: inline-block;
+    list-style: none;
+    border-right: 1px solid #fff;
+    padding: 5px 5px;
+}
+.item a{
+	text-decoration: none;
+	color: #fff;
+}
+.menu-center{
+	width: 100%;
+    background-color: #DD0000;
+    height: auto;
+}
+.menu-center-con{
+	width: 70%;
+    padding-left: 15%;
+    height: auto;
+}
+.item1{
+	border: 0;
+}
+.menu-bot{
+	width: 100%;
+    height: auto;
+    background-color: #DDDDDD;
+}
+.menu-bot .qc {
+	width: 55%;
+	margin: 0 auto;
+}
+.menu-bot .qc p {
+	float: right;
+	margin-right: 5px;
+}
+.menu-bot .qc .imgqc {
+	background-image: url(../image/EZV3A6D4CREHPLDIZGR2W5.jpg);
+	height: 100px;
+} 
+.menu-bot .qc .imgqc img {
+	background: white;
+	float: right;
+	
+}
+.content{
+	width: 70%;
+    height: auto;
+    margin: auto;
+}
+.content-left{
+	float: left;
+	width: 64%;
+    height: auto;
+}
+.content-left>h3{
+	padding-top: 20px;
+	font-size: 25px;
+}
+.content-right{
+	float: left;
+	width: 30%;
+    height: auto;
+    margin-left: 20px;
+}
+.clear {
+	clear: both;
+}
+.div1-left {
+	width: 40%;
+    height: auto;
+    float: left;
+    line-height: 13px;
+}
+.div1-left .div1-p{
+	padding-top: 15px;
+}
+.div1-right{
+	width: 60%;
+    height: auto;
+    float: left;
+}
+.div1-right img{
+	width: 75%;
+    padding-left: 50px;
+    padding-top: 16px;
+}
+.content-left .div1 p{
+	font-size: 22px;
+}
+.hr{
+	margin: 25px auto 10px;
+}
+.div2-left{
+	width: 32%;
+    float: left;
+    margin-right: 3px;
+    border-right: 1px solid #909090;
+}
+.div2-left img{
+	width: 88%;
+}
+.div2-mid{
+	width: 32%;
+    float: left;
+    margin-right: 3px;
+    margin-left: 5px;
+    border-right: 1px solid #909090;
+}
+.div2-mid img{
+	width: 88%;
+}
+.div2-right{
+	width: 30%;
+	float: left;
+	margin-left: 5px;
+}
+.div2-right a{
+	text-decoration: none;
+}
+.right-1{
+	background-color: #DDDDDD;
+	margin-top: 25px;
+}
+.right-1 .content1 .brgn{
+	font-size: 22px;
+}
+.right-1 .content1{
+	width: 80%;
+    padding: 8% 10% 5% 10%;
+}
+.right-1 .content1 img{
+	width: 100%;
+	padding-top: 10px;
+}
+.right-1 .content1 .br1{
+	text-align: center;
+}
+.div3-con {
+	width: 45%;
+	padding-right:5%;
+	float: left;
+}
+.hr1{
+	margin: 25px auto 10px;
+}
+.div4-con {
+	width: 45%;
+    padding-right: 3%;
+    float: left;
+    padding-top: 3%;
+}
+.div4-con .div4-con-left{
+	width: 47%;
+    float: left;
+    padding-right: 2%;
+    position: relative;
+}
+.div4-con .div4-con-left img{
+	width: 100%;
+	/*position: absolute;*/
+}
+.div4-con .div4-con-left .fa-volume-up{
+	position: absolute;
+    background-color: #fff;
+    bottom: 4px;
+    padding: 4px;
+}
+.div4-con-left .opacity-time {
+	background: black;
+    width: 26%;
+    color: white;
+    padding: 3px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 4px;
+    left: 27px;
+}
+.div4-con-right{
+	width: 46%;
+	float: left;
+}
+.div5-con {
+	width: 100%;
+	padding-top: 2%;
+	float: left;
+}
+.div5-con div{
+	width: 30%;
+	float: left;
+}
+.div5-con img{
+	width: 64%;
+}
+.div6-con {
+	width: 100%;
+	padding-top: 2%;
+	float: left;
+}
+.div6-con img{
+	width: 22%;
+	float: left;
+}
+.div6-con div{
+	width: 74%;
+	float: left;
+	padding-left: 3%;
+}
+.div7-cha{
+	width: 100%
+}
+.div7-con {
+	width:47%;
+	padding-right:2.5%;
+	padding-top:2%;
+	float:left;
+	position: relative;
+}
+.div7-con div .fa-camera{
+	padding: 6px;
+    position: absolute;
+    background-color: #fff;
+    top: 143px;
+}
+.div7-con div{
+	padding-bottom: 10px;
+}
+.div7-con div img{
+	width: 100%;
+}
+.right-2 {
+	width: 90%;
+    background-color: #DDDDDD;
+    float: left;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 3% 0% 3% 10%;
+}
+.right-3-cha{
+	width: 100%;
+}
+.right-3{
+	width: 90%;
+    padding-left: 10%;
+    margin-top: 25%;
+}
+.right-3-con{
+	width: 85%;
+    float: left;
+}
+.right-3-con-2{
+	width: 10%;
+    float: left;
+    color: red;
+    font-size: 30px;
+}
+.hr2{
+	margin: 3px auto 3px;
+	width: 90%;
+	margin-left: 0px;
+}
+.right-4{
+	width: 90%;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+.right-4-con{
+	width: 85%;
+    float: left;
+}
+.right-4-con-2{
+	width: 10%;
+    float: left;
+    color: red;
+    font-size: 30px;
+}
+.hr2{
+	margin: 3px auto 3px;
+	width: 90%;
+	margin-left: 0px;
+}
+.right-4-cha{
+	width: 100%;
+    margin-top: 5%;
+    background-color: #DDDDDD;
+    padding-bottom: 15px;
+}
+.right-4-top{
+	width: 90%;
+    padding: 3% 0% 3% 10%;
+    font-size: 20px;
+}
+.right-4-mid{
+	width: 90%;
+    padding: 0% 0% 3% 10%;
+}
+.right-4-mid .right-4-mid-con{
+	width: 44%;
+    height: 31px;
+    background: #fff;
+    border-bottom: 5px solid #3b5998;
+    text-align: center;
+    float: left;
+    margin-right: 4%;
+    margin-top: 3%;
+}
+.right-4-mid .r2{
+	border-bottom: 5px solid #1DA1F2;
+}
+.right-4-mid .r3{
+	border-bottom: 5px solid #c4302b;
+}
+.right-4-mid .r4{
+	border-bottom: 5px solid #DB4437;
+}
+.right-5 {
+	width: 100%;
+	padding: 3% 0% 3% 10%;
+	font-size: 20px;
+}
+.right-6{
+	width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fff;
+    padding: 2% 0% 1% 2%;
+}
+#footer {
+	width: 100%;
+	margin-top: 0 auto;
+	background-color: #777777;
+	float: left;
+	margin-top: 20px;
+}
+.footer1{
+	width: 70%;
+    padding-left: 15%;
+    color: #FFF;
+    font-size: 20px;
+    padding-top: 1%;
+}
+.footer2{
+	width: 70%;
+    padding-left: 15%;
+    color: #FFF;
+    padding-top: 1%;
+}
+.footer2 ul li{
+	display: inline-block;
+    border-right: 1px solid;
+    padding-right: 10%;
+    padding-left: 2%;
+}
+.footer2 ul>.footer2-item{
+	padding-left: 0%;
+}
+.footer2 .hr{
+	width: 90%;
+	margin-left: 0;
+}
+.footer3{
+	width: 70%;
+    padding-left: 15%;
+    color: #fff;
+}
+.footer3 div{
+	display: inline-block;
+	padding: 2% 2% 0% 0%;
+}
+.footer4 {
+	width: 70%;
+    padding-left: 15%;
+    padding-top: 15px;
+    color: #fff;
+    padding-bottom: 15px;
+}

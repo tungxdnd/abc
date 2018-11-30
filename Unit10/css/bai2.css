@@ -1,0 +1,50 @@
+    #formbt {
+        width: 50%;
+        background-image: url(../image/milky-way-2695569_960_720.jpg);
+        padding: 3% 10%;
+    }
+		form {
+    		border-radius: 5px;
+   		 	background-color: #f2f2f2;
+    		padding: 20px;
+        width: 80%;
+        margin: 5%;
+        padding-left: 10%;
+		}
+		label {
+			width: 100%;
+			float: left;
+		}	
+		input[type=text], .gioitinh{
+    		width: 100%;
+    		padding: 8px 20px;
+    		margin: 8px 0;
+    		display: inline-block;
+    		border: 1px solid #ccc;
+   		 	border-radius: 4px;
+   			box-sizing: border-box;
+   			float: left;
+   		}
+      .gioitinh {
+        background: #fff;
+      }
+   		input[type=button] {
+    		width: 20%;
+    		background-color: #4CAF50;
+    		color: white;
+    		padding: 8px 20px;
+   		 	margin: 8px 0;
+    		border: none;
+    		border-radius: 4px;
+    		cursor: pointer;
+    	}
+    	.clear {
+    		clear: both;
+    	}
+		form div {
+			width: 90%;
+			float: left;
+		}
+		div p {
+			color: red;
+		}

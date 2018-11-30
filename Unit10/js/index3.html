@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 02</title>
+	<link rel="stylesheet" type="text/css" href="CSS/HW02.css">
+	<style>
+		.clear{
+	clear: both;
+}
+#table{
+	margin-bottom: 50px;
+}
+	.row{
+		text-align: center;
+		border: 1px black solid;
+		width: 50%;
+		background: #00C2EC;
+	}
+		.row:hover{
+			background: #2DAA4B;
+		}
+		.check{
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			float: left;
+			border-right: 1px black solid;
+		}
+		.content{
+			height: 50px;
+			line-height: 50px;
+			float: left;
+			padding-left: 10px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="table">
+		<div class="row">
+			<div class="check">
+				<input class="checkbox" type="checkbox" name=""></div>
+			<div class="content">
+				Lorem ipsum dolor sit amet.
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="row">
+			<div class="check">
+				<input class="checkbox" type="checkbox" name=""></div>
+			<div class="content">
+				Lorem ipsum dolor sit amet.
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="row">
+			<div class="check">
+				<input class="checkbox" type="checkbox" name=""></div>
+			<div class="content">
+				Lorem ipsum dolor sit amet.
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="row">
+			<div class="check">
+				<input class="checkbox" type="checkbox" name=""></div>
+			<div class="content">
+				Lorem ipsum dolor sit amet.
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="row">
+			<div class="check">
+				<input class="checkbox" type="checkbox" name=""></div>
+			<div class="content">
+				Lorem ipsum dolor sit amet.
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+	<input type="button" id="check" value="Check All">
+	<input type="button" id="uncheck" value="Uncheck All">
+	<script type="text/javascript" src="js/HW02.js">
+		document.getElementById('check').addEventListener('click', function(){
+		var list = document.getElementsByTagName("input");
+	for (var i = list.length - 1; i >= 0; i--) {
+		list[i].checked = true;
+		}
+	})
+		document.getElementById('uncheck').addEventListener('click', function(){
+		var listu = document.getElementsByTagName("input");
+			for (var i = listu.length - 1; i >= 0; i--) {
+		listu[i].checked = false;
+		}
+	})
+	</script>
+</body>
+</html>

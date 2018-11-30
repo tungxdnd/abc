@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Ex01
+	</title>
+	<style>
+		.content {
+			border: 1px solid ;
+			width: 25%;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<p id="text">Cỡ Chữ</p>
+		<input type="button" id="macdinh" value="Mặc Định">
+		<input type="button" id="lon" value="Lớn">
+		<input type="button" id="nho" value="Nhỏ">
+	</div>
+
+
+
+	<script type="text/javascript">
+		var fontDefault = "16px";
+		var text = document.getElementById("text");
+		var btnMacDinh = document.getElementById("macdinh");
+		var btnLon = document.getElementById("lon");
+		var btnNho = document.getElementById("nho");
+		btnMacDinh.addEventListener("click", function(){
+			text.style.fontSize = fontDefault;
+		});
+
+		btnLon.addEventListener("click", function(){
+			var fontSizeOld  = window.getComputedStyle(text, null).getPropertyValue('font-size');
+			var fontSizeNew = parseInt(fontSizeOld) + (0.4*parseInt(fontSizeOld)); 
+			text.style.fontSize = fontSizeNew +'px';
+		});
+
+		btnNho.addEventListener("click", function(){
+			var fontSizeOld  = window.getComputedStyle(text, null).getPropertyValue('font-size');
+			var fontSizeNew = parseFloat(fontSizeOld) + (0.4*parseFloat(fontSizeOld)); 
+			text.style.fontSize = fontSizeNew +'px';
+		});
+	</script>
+</body>
+</html>

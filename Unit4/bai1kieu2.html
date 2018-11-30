@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 1 Kieu 2</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+		ul.menu {
+			width: 95%;
+			background: #33CC33;
+			padding: 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			padding-left: 10px;
+		}
+		ul.menu .item:hover {
+			background: #00EE00;
+		}
+		ul.menu .item {
+			display: inline-block;
+			padding: 10px;
+			text-decoration: none;
+			border-right: 1px solid #fff;
+			vertical-align: middle;
+			white-space: nowrap;
+		}
+		.menu .item ul li  {
+			list-style: none;
+			cursor: pointer;
+			margin: 0;
+			padding: 0;
+		}
+		#sub-item .item {
+			position: relative;
+		}
+		ul.sub-item {
+		position: absolute;
+		display: none;
+		top: 50px;
+   		height: auto;
+   		width: 200px;
+    	min-width: 100px;
+    	text-align: left;
+    	line-height: 30px;
+    	padding-top: 20px;
+    	padding-left: 0px;
+		}	
+		#sub-item:hover ul.sub-item {
+			display: block;
+		}
+		ul.menu .item .item1 {
+			background-image: url(image/24h_logo_trang_chu_2015.png);
+			background-size: cover;
+			width: 60px;
+			height: 30px;
+		}
+		#sub-item-con .item-con {
+			position: relative;
+		}
+		#sub-item-con ul.sub-item-con{
+			position: absolute;
+			left: 200px;
+			width: 200px;
+		
+    		text-align: left;
+    		line-height: 30px;
+		}
+		ul.sub-item li.sub-menu:hover ul.sub-item-con{
+			display: block;
+		}
+		ul.sub-item li.sub-menu:hover ul.sub-item-con li{
+			background-color: #00EE00;
+		}
+		ul.sub-item li:hover {
+			background-color: pink;
+		}
+
+			ul li ul {
+				display: none;
+				padding-left: 0px;
+			}	
+			ul.sub-item li{
+				background-color: #66FF66;
+				margin-top: 2px;
+			}
+
+	</style>
+
+</head>
+<body>
+	<ul class="menu">
+		<li class="item"><a href="">
+			<div class="item1"></div>
+		</a></li>
+		<li class="item" id="sub-item"><a href=""><i class="fas fa-align-justify"></i> Xem danh mục</a>
+			<ul class="sub-item">
+				<li><a href=""><i class="fas fa-angle-right"></i>Trang chủ 24 giờ</a></li>
+				<li id="sub-item-con" class="item-con sub-menu">
+						<a href=""><i class="fas fa-angle-right"></i>Tin tức trong ngày</a>
+					<ul class="sub-item-con">
+						<li><a href=""><i class="fas fa-angle-right"></i>Tin Hà Nội</a></li>
+						<li><a href=""><i class="fas fa-angle-right"></i>Tin T.P Hồ chí Minh</a></li>
+						<li><a href=""><i class="fas fa-angle-right"></i>Tin Đà Nẵng</a></li>
+						<li><a href=""><i class="fas fa-angle-right"></i>Tai nạn giao thông</a></li>
+						<li><a href=""><i class="fas fa-angle-right"></i>Tin Cần Thơ</a></li>
+						<li><a href=""><i class="fas fa-angle-right"></i>Tin Thời tiết</a></li>
+						<li><a href=""><i class="fas fa-angle-right">Dự báo thời tiết</i></a></li>
+					</ul>
+				</li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Bóng đá</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Thế giới</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Thời trang</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>An ninh xã hội</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Thời trang Hi-tech</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Tài chính bất động sản</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Ẩm thực</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Làm đẹp</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Đời sống Showbiz</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Giải trí</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Bạn bè - cuộc sống</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Giáo dục - duc học</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Thể thao</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Phi thường - kỳ quặc</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Công nghệ thông tin</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Ô tô</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Xe máy - xe đạp</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Thị trường - tiêu dùng</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Du lịch</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Sức khỏe đời sống</a></li>
+				<li><a href=""><i class="fas fa-angle-right"></i>Video tổng hợp</a></li>
+			</ul>
+		</li>
+		<li class="item"><a href="">Tin tức</a></li>
+		<li class="item"><a href="">Hi-tech</a></li>
+		<li class="item"><a href="">Showbiz</a></li>
+		<li class="item"><a href="">Giải trí</a></li>
+		<li class="item"><a href="">Sống trẻ</a></li>
+		<li class="item"><a href="">Thể thao</a></li>
+		<li class="item"><a href="">Sức khỏe</a></li>
+		<li class="item"><a href="">Video</a></li>
+		<li class="item"><a href="">Phái đẹp</a></li>
+		<li class="item"><a href="">Game</a></li>
+		<li style="float: right; padding-right: 20px; padding-left: 20px;" class="item"><a href=""><i class="fas fa-search"></i></a></li>
+	</ul>
+</body>
+</html>

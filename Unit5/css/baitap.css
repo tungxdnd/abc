@@ -1,0 +1,28 @@
+.header{
+	width: 100%;
+	margin-top: 0 auto;
+}
+.h3 {
+	background-color: #EE0000;
+	width: 100%;
+	height: 45px;
+}
+.header-center{
+	width: 100%;
+	height: 25px;
+	background-color: #DD0000;
+}
+.item {
+	border-right: 1px solid #fff;
+	display: inline-block;
+	list-style: none;
+	text-decoration: block;
+	color: #fff;
+
+}
+.header-bot-image{
+	padding-left: 280px;
+    width: 100%;
+    height: 120px;
+    background-color: grey;
+    }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+		/* .div {
+			width: 50%;
+			height: 200px;
+			float: left;
+		}
+		#div1 {
+			background: red;
+		}
+		#div2 {
+			background: blue;
+		}
+		@media screen (max-width: 600px) and (min-width: 700px) {
+			#div1, #div2 {
+				width: 100%
+			}
+			
+		} */
+		}
+		#menu {
+			height: 45px;
+			background: pink;
+		}
+		#menu ul{
+			line-height: 45px;
+			padding-left: 0;
+			list-style: none;
+			background: green;
+		}
+		#menu ul li:hover a{
+			background: pink;
+		}
+		#menu>ul>li.item {
+			float: left;
+			list-style: none;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		#menu>ul>li .fa-bars{
+			color: #fff;
+		}
+		#menu>ul>li.item a{
+			color: #fff;
+			text-decoration: none;
+			line-height: 45px;
+		}
+		/#menu>ul>li.item:first-child{
+			line-height: 45px;
+			color: #fff;
+			display: none; 
+		}
+		.box {
+			width: 45%;
+			padding: 5%;
+		}
+		@media (max-width: 819px) {
+		
+			#menu>ul>li.item {
+				display: none;
+			}
+			#menu>ul>li.item:first-child{
+				display: block;
+				float: none;
+			}
+			/* #menu>ul>li.item:first-child:hover~.item {
+				float: none;
+				display: block;
+			} */
+			 #menu>ul:hover>li.item:first-child~.item {
+				float: none;
+				display: block;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- <div class="div" id="div1"></div>
+	<div class="div" id="div2"></div> -->
+	<nav id="menu">
+		<ul>
+			<li class="item"><i class="fas fa-bars"></i></li>
+			<li class="item"><a href="">Home</a></li>
+			<li class="item"><a href="">About</a></li>
+			<li class="item"><a href="">Coures</a></li>
+			<li class="item"><a href="">News</a></li>
+			<li class="item"><a href="">Contact</a></li>
+			<li class="item"><a href="">Contact</a></li>
+			<li class="item"><a href="">Contact</a></li>
+			<li class="item"><a href="">Contact</a></li>
+			<li class="item"><a href="">Contact</a></li>
+			<li class="item"><a href="">Contact</a></li>
+			<li class="item"><a href="">Contact</a></li>
+			<div style="clear: both;"></div>
+		</ul>
+	</nav>
+	<section>
+		<div class="box">
+			<img src="image/abc.jpg" alt="">
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, accusamus?</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam veniam, suscipit omnis dignissimos voluptatem.</p>
+		</div>
+		<div class="box">
+			<img src="image/abc.jpg" alt="">
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, accusamus?</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam veniam, suscipit omnis dignissimos voluptatem.</p>
+		</div>
+		<div class="box">
+			<img src="image/abc.jpg" alt="">
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, accusamus?</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam veniam, suscipit omnis dignissimos voluptatem.</p>
+		</div>
+		<div class="box">
+			<img src="image/abc.jpg" alt="">
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, accusamus?</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam veniam, suscipit omnis dignissimos voluptatem.</p>
+		</div>
+	</section>
+</body>
+</html>

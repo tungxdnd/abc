@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bai1.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<div class="slideshow-container">
+        
+        <div class="mySlides fade">
+        	
+        	<img src="image/milky-way-2695569_960_720.jpg" style="width:100%">
+        	<div class="text">Background 1</div>
+        	
+        </div>
+
+        <div class="mySlides fade">
+        	<img src="image/background-1462755_960_720.jpg" style="width:100%">
+        	<div class="text">Background 2</div>
+        </div>
+
+        <div class="mySlides fade">
+        	<img src="image/photo-1530482817083-29ae4b92ff15.jpg" style="width:100%">
+        	<div class="text">Background 3</div>
+        </div>
+        <div class="mySlides fade">
+        	<img src="image/maxresdefault.jpg" style="width:100%">
+        	<div class="text">Background 4</div>
+        </div>
+        <div class="mySlides fade">
+        	<img src="image/72cd26e14b7fcba028206a06f10548c0d5174cfc.jpg" style="width:100%">
+        	<div class="text">Background 5</div>
+        </div>
+
+		<button><i class="fas fa-arrow-left"></i></i></button>
+		<button><i class="fas fa-arrow-right"></i></button>
+
+    </div>
+    <br>
+	<div class="span-dot">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>  
+
+    <script>
+     
+      var slideIndex;
+      
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          
+          slideIndex++;
+         
+
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          
+          setTimeout(showSlides, 10000);
+      }
+      
+
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
+</body>
+</html>

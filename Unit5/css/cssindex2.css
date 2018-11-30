@@ -1,0 +1,29 @@
+#menu{
+	background-color: #666666;
+}
+.menu-con {
+	border-right: 1px #fff solid;
+	width: 100px;
+	display: inline-block;
+	padding: 10px;
+}
+.menu-con:hover {
+	background-color: #FF6633;
+}
+li#menu-con3.menu-con {
+	position: relative;
+}
+ul.link {
+	position: absolute;
+	display: none;
+	list-style: none;
+	text-decoration: none;
+}
+
+.menu-con>a{
+ 	text-decoration: none;
+}
+#menu-con3:hover ul.link{
+	display: block;	
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/* .name {
+			width: 200px;
+			height: 200px;
+			background: red;
+			position: relative;
+			z-index: 3;
+		}
+		.child {
+			width: 100px;
+			height: 100px;
+			background: blue;
+			position: absolute;
+			border: 5px solid;
+			left: 5%;
+			top: 10%;
+			z-index: 1s;
+			} */
+			ul.menu{
+				padding-left: 0;
+				/*height: 42px;*/
+				background: blue;
+			}
+			ul.menu .item:hover {
+				background: pink;
+			}
+			ul.menu .item {
+				display: inline-block;
+				padding: 10px;
+				text-decoration: none;
+
+			}
+			
+			#submenu {
+				position: relative;
+				background-color: pink;
+
+			}
+
+			ul.submenu {
+				display: none;
+				position: absolute;
+				left: 0px;
+				top: 38px;
+				padding: 10px;
+				min-width: 150px;
+				background-color: pink;
+			}
+			#submenu:hover ul.submenu{
+				display: block;
+			}
+			/* none: ẩn, block: hiện */
+			#submenu ul.submenu li.item-sub {
+				list-style: none;
+				padding: 0;
+			}
+
+		</style>
+	</head>
+	<body >
+		<ul class="menu">
+			<li class="item"><a href="">Home</a></li>
+			<li class="item" id="submenu">
+				<a href="" >Sucore</a>
+				<ul class="submenu">
+					<li class="item-sub">
+						<a href="">a</a>
+					</li>
+					<li class="item-sub">
+						<a href="">b</a>
+					</li>
+					<li class="item-sub">
+						<a href="">c</a>
+					</li>
+				</ul>
+			</li>
+			<li class="item"><a href="">About</a></li>
+			<li class="item"><a href="">Contact</a></li>
+		</ul>
+	</body>
+	</html>

@@ -1,0 +1,110 @@
+#menu{
+	width: 100%;
+}
+#menu .menu-con {
+	width: 60%;
+    margin:0 auto;
+}
+.menu-left, .menu-right {
+	width: 30%;
+    float: left;
+}
+.menu-left {
+	border-bottom: 1px #b3b3b3 solid;
+	border-top: 1px #b3b3b3 solid;
+	margin-top: 30px;
+}
+.menu-right {
+    border-bottom: 1px #b3b3b3 solid ;
+    border-top: 1px #b3b3b3 solid;
+    margin-top: 30px;
+}
+.menu-con ul{
+	list-style:none;
+    margin: 0;
+    padding: 0;
+    height: 64px;
+    line-height: 64px;
+}
+.menu-con ul li {
+	float: left;
+    font-family: 'FuturaStdBoldCondensed';
+    font-size: 16px;
+    margin: 0 20px;
+}
+.menu-left ul li {
+    float: left;
+}
+.menu-right ul li {
+    float: left
+}
+.menu-mid {
+	float: left;
+	width: 30%;
+}
+
+.logo {
+	width: 100%	
+}
+.clear {
+	clear: both;
+}
+.item a {
+	text-decoration: none;
+}
+#content {
+	width: 100%;
+	background: #DDDDDD;
+	float: left;
+}
+.content-top{
+	width: 90%;
+	padding-left: 5%;
+}
+.content-top .content-top1 {
+	width: 100%;
+	color: #4EE2EC;
+	font-size: 40px;
+}
+.content-top .content-top2 {
+	text-align: center;
+}
+.content-bot {
+	width: 90%;
+	margin-top: 30px;
+	padding-left: 5%;
+}
+.content-bot .conten1 {
+	width: 28%;
+	float: left;
+	padding-right: 2.5%;
+}
+.content-bot .conten1 img{
+	width: 100%;
+}
+#about {
+	width: 100%;
+	background: #fff;
+}
+.about-me {
+	width: 55%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.stalker {
+	width: 28%;
+	float: left;
+}
+.stalker>p>i{
+	    font-size: 25px;
+}
+@media (max-width: 900px) {
+		
+			.menu>ul>li.item {
+				display: none;
+			}
+			#menu>ul>li.item:first-child{
+				display: block;
+				float: none;
+			}

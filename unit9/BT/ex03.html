@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex03</title>
+	<style>
+	#ex3 {
+		width: 70%;
+	}
+	.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+	.tab .tabsection {
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+	.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+	}
+	.active {
+		display: block;
+	
+	}
+	/* .tab-active{
+		background: #ccc;
+	} */
+	.tab .tabsection{
+		border-right: 1px solid #ccc;
+	}
+
+</style>
+</head>
+<body>
+	<div id="ex3">
+		<div class="tab tab-active">
+			<input type="button" value="Tab 1"  id="tab-1" class="tabsection tab-active" onclick="opentab(1)">
+			<input type="button" value="Tab 2" id="tab-2" class="tabsection " onclick="opentab(2)">
+			<input type="button" value="Tab 3"  id="tab-3" class="tabsection " onclick="opentab(3)">
+		</div>
+		<div class="tabcontent active" id="content-1">
+			<h3>Section 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa rerum vel at quia pariatur, cumque soluta ducimus dolorem ex eaque?</p>
+		</div>
+		<div class="tabcontent" id="content-2">
+			<h3>Section 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque mollitia, consequatur in qui delectus ab accusantium itaque dolores, alias provident veritatis repellendus.</p>
+		</div>
+		<div class="tabcontent" id="content-3">
+			<h3>Section 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos id odit incidunt fuga vel totam sint sequi ad, quae maiores minima excepturi, ullam officia.</p>
+		</div>
+	</div>
+	<script>
+		function opentab(number) {
+			var i, tabcontent, tabsection ;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			tabsection = document.getElementsByClassName("tabsection");
+			for (i = 0; i < tabsection.length; i++) {
+				tabsection[i].style.background= '#f1f1f1';
+			}
+
+			document.getElementById("content-"+number).style.display='block';
+			document.getElementById("tab-"+number).style.background='#ccc';
+
+		}
+	</script>
+</body>
+</html>

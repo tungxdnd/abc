@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		form {
+    		border-radius: 5px;
+   		 	background-color: #f2f2f2;
+    		padding: 20px;
+
+		}	
+		label {
+			width: 100%;
+			float: left;
+		}	
+		input[type=text]{
+    		width: 100%;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		display: inline-block;
+    		border: 1px solid #ccc;
+   		 	border-radius: 4px;
+   			box-sizing: border-box;
+   			float: left;
+   		}
+   		input[type=button] {
+    		width: 20%;
+    		background-color: #4CAF50;
+    		color: white;
+    		padding: 14px 20px;
+   		 	margin: 8px 0;
+    		border: none;
+    		border-radius: 4px;
+    		cursor: pointer;
+    	}
+    	.clear {
+    		clear: both;
+    	}
+		form div {
+			width: 90%;
+			float: left;
+		}
+		div p {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<div>
+			<label for="">Name</label>
+			<input type="text" id="name" placeholder="Your Name">
+			<p class="error errorName" id="errorName"></p>
+		</div>
+		<div>
+			<label for="">Email</label>
+			<input type="text" id="email" placeholder="Your Email">
+			<p class="error errorEmail" id="errorEmail"></p>
+		</div>
+		<div>
+			<label for="">Password</label>
+			<input type="text" id="password" placeholder="Password">
+			<p class="error errorPassword" id="errorPassword"></p>
+		</div>
+		<div>
+			<label for="">Moblie</label>
+			<input type="text" id="mobile" placeholder="Your Mobile">
+			<p class="error errorMobile" id="errorMobile"></p>
+		</div>
+		<input type="button" value="Add" id="add">
+		<div class="clear"></div>
+		
+	</form>
+	<script type="text/javascript">
+		document.getElementById('add').addEventListener('click',function (e) {
+			var name = document.getElementById('name')
+			var email = document.getElementById('email')
+			var password = document.getElementById('password')
+			var mobile = document.getElementById('mobile')
+			if (name.value.trim() =='') {
+				document.getElementById('errorName').innerHTML = 'Bạn nhập chưa đúng tên'
+			}
+			else if (name.value.length > 15) {
+				document.getElementById('errorName').innerHTML = '' ;
+			}
+
+
+			if (email.value.trim() =='') {
+				document.getElementById('errorEmail').innerHTML = 'Bạn chưa nhập email'
+			}
+			else if (email.value.length > 6) {
+				document.getElementById('errorEmail').innerHTML = '' ;
+			}
+
+
+
+			if (password.value.trim() =='') {
+				document.getElementById('errorPassword').innerHTML = 'Password không hợp lệ'
+			}
+			else if (password.value.length > 6) {
+				document.getElementById('errorPassword').innerHTML = '';
+			}
+
+
+			if (mobile.value.trim() =='') {
+				document.getElementById('errorMobile').innerHTML = 'Mobile không hợp lệ'
+			}
+			else if (mobile.value.length > 10) {
+				document.getElementById('errorMobile').innerHTML = '';
+			}
+		})
+		
+	</script>
+</body>
+</html>

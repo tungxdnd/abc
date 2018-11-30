@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <input type="text" value="Thẻ cần lấy" class="website"/>
+    <div>
+        <input type="text" value="Thẻ không cần Lấy" class="website"/>
+        <input type="text" value="Thẻ không cần lấy"/>
+    </div>
+
+    <input type="text" name="kham" id="input">
+    <p id="text" name="Kham" age="3" school="KDCN"></p>
+    <input type="button" value="CLick me" onclick="change()" id="object" />
+
+    <div id="message">
+          Chào mừng các bạn đến với ZentGroup Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iure unde voluptates?
+        <input type="button" value="Change backgroud" onclick="change_background()"/>
+        <input type="button" value="Change color" onclick="change_color()"/>
+        <input type="button" value="Change height" onclick="change_height()"/>
+        <input type="button" value="Change fontsize" onclick="change_font_size()"/>
+        <input type="button" value="Change lineheight" onclick="change_line_height()"/>
+    </div>
+        
+    <br>
+	<div>
+		<input type="text" id="zent">
+	</div>
+	<div id="content">
+        <h5>Xin chào các bạn</h5>          
+        <h5>chúc vui vẻ khi học bài</h5>
+    </div>
+    	<input type="button" value="View" id="btn-view"/>
+    <div>
+    	<input type="text" name="" id="input1" placeholder="input1 here">
+    	<button id="add">add</button>
+    	<div id="content"></div>
+    </div>
+  </body>
+</html>
+<script>
+      var selectors = document.getElementsByClassName("website")
+      selectors[0].style.border="1px solid red";
+
+      function change() {
+      	var object = document.getElemntById("object");
+      	var type = object.type;
+      	if (type == "button") {
+      		object.type = 'text';
+
+      	}
+      	else{
+      		object.type = 'button'
+      	}
+    }
+    	var selectors = document.getElementById("text");
+    	selectors.innerHTML = 'Name: ' + selectors.getAttribute('name') + " Age" + selectors.getAttribute('age') 
+    	var input = document.getElementById("input");
+    	alert(input.getAttribute('type'));
+
+    	 function change_background()
+            {
+               document.getElementById("message").style.background = 'grey';
+            }
+ 
+            function change_color()
+            {
+               document.getElementById("message").style.color = 'blue';
+            }
+ 
+            function change_height()
+            {
+               document.getElementById("message").style.height = '200px';
+            }
+ 
+            function change_font_size()
+            {
+               document.getElementById("message").style.fontSize = '100px';
+            }
+            function change_line_height()
+            {
+            	document.getElementById("message").style.lineHeight = '200px';
+            }
+
+        var selector = document.getElementById("zent");
+        selector.addEventListener('blur',function(){
+            selector.value =selector.value.toUpperCase()
+            })
+
+            // Lấy button
+        var button = document.getElementById("btn-view");
+           
+          // Thêm sự kiện click cho button
+        button.addEventListener("click", function(){
+            // Tạo mới một thẻ h1
+        var h1 = document.createElement("h1");
+ 
+            // Thêm nội dung HTML vào thẻ h1
+        h1.innerHTML = "ZentGroup xin chao cac ban"
+ 
+            // Lấy thẻ ngoài cùng
+        var element = document.getElementById("content");
+             
+            // Lấy thẻ cần isertBefore
+        var element_child = document.getElementsByTagName("h5")[1];
+             
+            // Insert Before
+        element.insertBefore(h1, element_child);
+        });
+
+        document.getElementById(add).addEventListener('click',function() {
+        	var input = document.getElementById('input1');
+        	var content = document.getElementById('content')
+        	var value = input.value;
+        	content.innerHTML = value;
+        	input.value ='';
+        });
+</script>
+
+
+
+
+

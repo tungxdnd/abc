@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+         div {
+    display: block;
+}
+
+.nav {
+    height: 64px;
+    width: 100%;
+    margin:0 auto;
+}
+
+.container {
+    width: 960px;
+    position: relative;
+    margin:0 auto;
+}
+
+.menu-left, .menu-right {
+    width: 300px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+}
+
+.menu-left {
+    left: 200px;
+}
+
+.menu-right {
+    right: 200px;
+}
+
+.nav ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    height: 64px;
+    line-height: 64px;
+}
+
+.nav ul li {
+    float: left;
+    font-family: 'FuturaStdBoldCondensed';
+    font-size: 20px;
+    margin:0 20px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.menu-right ul li {
+    float: right;
+}
+
+#logo-container {
+    width: 140px;
+    height: 128px;
+    position:absolute;
+    left:50%;
+}
+.logo {
+    position: relative;
+    left: -110px;
+    width: 190px;
+    height: 128px;
+    background: url(image/abc.jpg) center center rgba(0,0,0, 0.4);
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <div class="menu-left">
+                <ul>
+                    <li><a id="hello" href="#">Home</a></li>
+                    <li><a id="about" href="#">About</a></li>
+                </ul>
+            </div>
+            <div id="logo-container"><div class="logo"></div></div>
+            <div class="menu-right">
+                <ul>
+                    <li><a id="portfolio" href="#">Portfolio</a></li>
+                    <li><a id="contact" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

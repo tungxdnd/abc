@@ -1,0 +1,66 @@
+	#header {
+		width: 100%;
+		box-shadow: 0 0 9px 0 #999494;
+	}
+	#logo{
+		width: 30%;
+		float: left;
+	}
+		#logo>img{
+			height: 55px;
+   			width: 55%;
+   			padding: 1% 0 0 30%;
+		}
+		#menu {
+			width: 50%;
+			padding-left: 15%;
+			float: right;
+		}
+		#menu ul li {
+			display: inline-block;
+			list-style: none;
+			padding-right: 5%;
+		}
+		#menu ul li a{
+			text-decoration: none;
+			color: #333333;
+		}
+		#menu ul li a:hover {
+			color: #FF6600;
+		}
+		#section {
+			width: 100%;
+			float: left;
+			background: #EEEEEE;
+		}
+		.clear {
+			clear: both;
+		}
+		#sidebar {
+			width: 30%;
+			float: left;
+		}
+		#sidebar ul {
+			padding-left: 30%;
+			width: 70%;
+		}
+		#sidebar ul .item{
+			background: #FF6600;
+		}
+		#sidebar ul li:hover {
+			background: #FF6600;
+		}
+		#sidebar ul li a:hover {
+			color: #fff;
+		}
+		#sidebar ul li{
+			width: 70%;
+			list-style: none;
+			padding-bottom: 5%;
+			padding: 8px 0 2px 20px;
+    		height: 25px;
+		}
+		#sidebar ul li a{
+			text-decoration: none;
+			color: #333333;
+		}
